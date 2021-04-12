@@ -165,7 +165,6 @@ body
 
 .account_pic {
     margin-right: 2%;
-    background-color: white;
     border-radius: 50%;
     height: 200px;
     width: 200px;
@@ -204,4 +203,17 @@ body
     color: white;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 4px 20px 4px 20px;
+}
+
+.profile {
+    margin-top: 1%;
+    border: 0px solid white;
+}
+
+.profile_btn {
+    float: left;
+    width: 38%;
+    background-color: rgb(245, 245, 245);
+    border-radius: 6px 6px 6px 6px;
+    margin-left: 4%;
 }

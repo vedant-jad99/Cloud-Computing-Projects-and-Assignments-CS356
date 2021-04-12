@@ -7,11 +7,24 @@
             <div class="account_pic_holder">
                 <center>
                     <div class="account_pic">
-                        <img src="{{ url_for('static', filename='images/profile.png') }}"/>
+                        <img src="{{ url_for('static', filename='profile_pictures/' + current_user.info[0].profile) }}"/>
                     </div>
-                    <div class="account_user">
-                        <button onclick=""> Add profile picture </button>
-                    </div>
+                    <form method="post" action="" enctype="multipart/form-data">
+                        {{ form.hidden_tag() }}
+                        <fieldset class="profile">
+                            {{ form.profile.label(class="form-label") }}
+                            {{ form.profile(class="form-control") }}
+                            {% if form.profile.errors %}
+                                {% for error in form.profile.errors %}
+                                    <span style="color:red;">{{ error }}</span>
+                                    <br>
+                                {% endfor %}
+                            {% endif %}
+                        </fieldset>
+                        <div class="form-group">
+                            {{ form.add(class="profile_btn") }}
+                        </div>
+                    </form>
                 </center>
             </div>
         </span>
