@@ -1,0 +1,60 @@
+f18bd56 Updated account.html
+753b7ab Modified requirements.txt
+277a1bf Modified database URI
+7177b9d Modified database URI
+21c689f Adding more dependencies to requirements file
+bcc4bff Added different Procfile
+07969b2 Removed procfile
+1da3eff Merge pull request #1 from vedant-jad99/account-addition
+b638c71 Adding log files
+02fe1d3 Adding Profile and requirements file
+02a5980 Modified the table structure
+41ee5f6 Modifications to existing routes and addition of more routes
+8629664 Added a new login view
+a18e80d Added a new table for user info and created a relationship
+2a1ce54 Added css for profile page
+40f92d8 Added default image for profile pic
+f50ddcf Added profile and accounts page
+8ddce86 Added user info form
+534e2a2 Added css for accounts page
+60d441c Added links to account and home section
+c33b6da Update README.md
+20a97aa Modified image paths
+70c3f57 Adding all images in a folder
+dbd222c Minor modifications
+08ef56b Adding images used in html
+52bd05d Functionality of image slideshow added
+7acdcbf Added style tag for animations of slides
+fae55c4 Added css for image slideshow
+bdcdeb7 Extending the layout template to main page
+b8da132 Added a common layout template
+26c2c20 Completely modified the home page of the app
+843aff4 Adding the css file for the main page
+e1e1a5a Added user login, user authentication and logout routes and features
+352e1fe Modified the log file path so that it can be set even if program ran out of source directory
+1ffda1d Adding and deleting image files
+24f6c7c Changed the background image
+86f8158 Made some modification in css
+e3ec7a5 Rectified a spelling mistake
+1d481c0 Changed the background image of the page
+914d7c0 Added a different image file
+102fa2a Minor modification and addition
+8b2db6c Added flash message and a remember me option
+3dbe62d Added a remember me option
+04cd076 Added a few more imports
+d69de37 Added custom email and username validators
+b374065 Small correction
+71a3018 Changes to app.py after structuring it
+a724ffd Change in app.py after structuring
+38b28f4 Created a package structure
+a8ee88e Deleted __pycache__ files
+4adf748 Adding a .gitignore file
+224c653 Deleted some unwanted classes
+fe6aa39 Added first and last name inputs to registration form and made some css changes to all html files
+0f435bd Added first name and last name variable
+fddebc9 Modified few css features
+6410bf4 Added forgot password and registration redirect feature to html
+6cc04ed Added email login html page
+69d76eb Added login via email feature and a few more validations
+b04efd4 Basic structure of the webapp
+a60c537 Initial commit

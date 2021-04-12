@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+    {% block content %}        
+        <div class="holder placeholder child1">
+            <img id="bigpicture" src="{{ url_for('static', filename='images/1.jpg') }}" class="main_img center slides w3-animate-right" alt="Cinque Terre"> 
+            <img id="bigpicture" src="{{ url_for('static', filename='images/2.jpg') }}" class="main_img center slides w3-animate-right" alt="Cinque Terre"> 
+            <img id="bigpicture" src="{{ url_for('static', filename='images/3.jpg') }}" class="main_img center slides w3-animate-right" alt="Cinque Terre">
+            <img id="bigpicture" src="{{ url_for('static', filename='images/4.jpg') }}" class="main_img center slides w3-animate-right" alt="Cinque Terre">
+            <img id="bigpicture" src="{{ url_for('static', filename='images/5.jpg') }}" class="main_img center slides w3-animate-right" alt="Cinque Terre">
+        </div>
+        <div class="holder circle child2">
+            <h1> Web app task </h1>
+            {% if current_user.is_authenticated %}
+                <h2>Welcome<h2> 
+                <p>{{ current_user.first_name.capitalize() + " " + current_user.last_name.capitalize() }}<p>
+            {% else %}
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                <br>
+                <span>
+                    <a href="{{url_for('login1')}}"> Log In </a> | 
+                    <a href="{{url_for('registration')}}"> Sign Up </a>
+                </span>
+            {% endif %}
+        </div>
+
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("slides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) 
+                {   myIndex = 1  }    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 2000);
+            }
+        </script>
+    {% endblock content %}

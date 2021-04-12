@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+    {% block content %}
+        <span>
+            <div class="account_name">
+                <span><h1>{{ current_user.first_name.capitalize() + " " + current_user.last_name.capitalize() }}</h1> <a href="{{ url_for('profile') }}"> (Edit Profile) </a></span>
+            </div>
+            <div class="account_pic_holder">
+                <center>
+                    <div class="account_pic">
+                        <img src="{{ url_for('static', filename='images/profile.png') }}"/>
+                    </div>
+                    <div class="account_user">
+                        <button onclick=""> Add profile picture </button>
+                    </div>
+                </center>
+            </div>
+        </span>
+        <section class="account_info">
+            <div>
+                <h4> About user </h4>
+            </div>
+            <hr style="color: white">
+            <div>
+                <p> {{ current_user.info[0].about }}</p>
+            </div>
+        </section>
+        <section class="account_info" style="margin-top: 1%">
+            <div>
+                <h4> Profession </h4>
+            </div>
+            <hr style="color: white">
+            <div>
+                <p> {{ current_user.info[0].profession }} </p>
+            </div>
+        </section>
+        <section class="account_info" style="margin-top: 1%">
+            <div>
+                <h4> Links to user's works </h2>
+            </div>
+            <hr style="color: white">
+            <div>
+                <ul style="list-style-type:none">
+                    <li><a href="{{ current_user.info[0].link1 }}"> {{ current_user.info[0].link1 }} </a></li>
+                    <li><a href="{{ current_user.info[0].link2 }}"> {{ current_user.info[0].link2 }} </a></li>
+                    <li><a href="{{ current_user.info[0].link3 }}"> {{ current_user.info[0].link3 }} </a></li>
+                    <li><a href="{{ current_user.info[0].link4 }}"> {{ current_user.info[0].link4 }} </a></li>
+                </ul>
+            </div>
+        </section>
+    {% endblock content %}

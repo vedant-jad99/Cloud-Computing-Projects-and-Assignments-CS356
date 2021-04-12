@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+        {% if title == None %}
+            <title>Default Page</title>
+        {% else %}
+            <title>{{ title }}</title>
+        {% endif %}
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    </head>
+    <body>
+    <div class="signup-form">
+        <form action="" method="post">
+            {{ form.hidden_tag() }}
+            <fieldset class="form-group">
+                <div class="form-group">
+                    {{ form.username.label(class="form-control-label") }}
+                    {% if form.username.errors %}
+                        {{ form.username(class="form-control form-control-lg") }}
+                    
+                        <div>
+                            {% for error in form.username.errors %}
+                                <span class="warning">{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.username(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{ form.password.label(class="form-control-label") }}
+                    {% if form.password.errors %}
+                        {{ form.password(class="form-control form-control-lg") }}
+                    
+                        <div>
+                            {% for error in form.password.errors %}
+                                <span class="warning">{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.password(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+            </fieldset>
+            {{ form.remember }} Remember me
+            <br><br>
+            <div class="form-group">
+                {{ form.submit(class="btn btn-success btn-lg btn-block") }}
+            </div>
+            <div class="text-center">
+                <small>
+                    Forgot your password? <a href="#" class="signup-form form a">Click here</a>
+                </small>
+            </div>
+            <div class="text-center">
+                <small>
+                    Login through email <a href="{{ url_for('login2') }}" class="signup-form form a">here</a>
+                </small>
+            </div>
+        </form>
+        <div class="text-center">Need an account? <a href="{{ url_for('registration') }}" class="signup-form form a">Clik here to sign up</a></div>
+    </div>
+    <div class="container">
+        <div class="text-center limit">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {%for category, message in messages %}
+                        <div class="alert alert-{{ category }} width: 100px">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>
+    </div>
+    </body>
+</html>
