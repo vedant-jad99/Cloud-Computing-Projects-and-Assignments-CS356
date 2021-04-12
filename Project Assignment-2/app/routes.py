@@ -22,6 +22,10 @@ def home():
     db.create_all()
     return render_template("main.html", title=None, user=None)
 
+@app.route("/about")
+def about():
+    return render_template("about.html", title="About")
+
 @app.route("/registration", methods=["GET", "POST"])
 def registration():
     if current_user.is_authenticated:
