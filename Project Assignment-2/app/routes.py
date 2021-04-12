@@ -1,8 +1,20 @@
 from flask import render_template, url_for, flash, redirect
 from app import app, bcrypt, db
-from app.forms import RegistrationForm, LoginForm1, LoginForm2, Info
+from app.forms import RegistrationForm, LoginForm1, LoginForm2, Info, Picture
 from app.models import User, UserInfo
 from flask_login import login_user, current_user, logout_user, login_required
+import secrets
+import os
+
+def save_picture(form_picture):
+    random_hex = secrets.token_hex(8)
+    f_name, f_ext = os.path.splitext(form_picture.filename)
+    pic_fn = random_hex + f_ext
+    pic_path = os.path.join(app.root_path, 'static', 'profile_pictures', pic_fn)
+    form_picture.save(pic_path)
+    return pic_fn
+    
+
 
 @app.route('/')
 @app.route('/home')
@@ -69,10 +81,17 @@ def logout():
     logout_user()
     return redirect(url_for("home", title=None))
 
-@app.route("/account")
+@app.route("/account", methods=["GET", "POST"])
 @login_required
 def account():
-    return render_template("account.html", title="Account")
+    form = Picture()
+    info = UserInfo.query.filter_by(id=current_user.id).first()
+    if form.validate_on_submit():
+        if form.profile.data:
+            pic_file = save_picture(form.profile.data)
+            info.profile = pic_file
+            db.session.commit()
+    return render_template("account.html", title="Account", form=form)
 
 @app.route("/profile", methods=["GET", "POST"])
 @login_required
