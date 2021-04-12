@@ -8,13 +8,13 @@
             <img id="bigpicture" src="{{ url_for('static', filename='images/5.jpg') }}" class="main_img center slides w3-animate-right" alt="Cinque Terre">
         </div>
         <div class="holder circle child2">
-            <h1> Web app task </h1>
+            <h1> Prototype webapp </h1>
             {% if current_user.is_authenticated %}
                 <h2>Welcome<h2> 
                 <p>{{ current_user.first_name.capitalize() + " " + current_user.last_name.capitalize() }}<p>
             {% else %}
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                Some introductory text here signifying the purpose of this webapp <br>
+                More paragraph here, some catchy tagline of the product. Can also include trademark title
                 <br>
                 <span>
                     <a href="{{url_for('login1')}}"> Log In </a> | 
