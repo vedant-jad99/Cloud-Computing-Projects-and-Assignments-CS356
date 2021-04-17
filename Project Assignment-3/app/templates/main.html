@@ -15,6 +15,29 @@
     <body>
 	    <div class="container">
 	    	<h1>Amazon rekognition demo app</h1>
+		<div class="pic">
+		    {% if name == None %}
+                        <img src="{{ url_for('static', filename='images/test2.jpg') }}"/>
+		    {% else %}
+		        <img src="{{ url_for('static', filename='images/' + name) }}"/>
+		    {% endif %}
+                </div>
+		<form action="" method="post" enctype="multipart/form-data">
+            	    {{ form.hidden_tag() }}
+		    <fieldset class="profile">
+			{{ form.image.label(class="form-label") }}
+			{{ form.image(class="form-control") }}
+			{% if form.image.errors %}
+			   {%  for error in form.image.errors %}
+			   	<span style="color:red;">{{ error }}</span>
+				<br>
+			   {% endfor %}
+			{% endif %}
+		    </fieldset>
+		    <div class="form-group">
+			{{ form.submit(class="profile_btn") }}
+		    </div>
+		 </form>
 	    </div>
 	    <div class="container">
 		<h1>Result<h1>
