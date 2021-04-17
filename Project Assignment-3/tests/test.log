@@ -204,3 +204,193 @@ b'' MainThread
 2021-04-17 10:04:28,873 DEBUG Loading s3:Object MainThread
 2021-04-17 10:04:28,875 DEBUG Event creating-resource-class.s3.Object: calling handler <function lazy_call.<locals>._handler at 0x7fd370d0b820> MainThread
 2021-04-17 10:04:28,875 INFO Upload successful! MainThread
+2021-04-17 16:47:39,579 INFO Starting rekognition service MainThread
+2021-04-17 16:48:07,163 INFO Starting rekognition service MainThread
+2021-04-17 16:48:07,164 DEBUG Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane MainThread
+2021-04-17 16:48:07,165 DEBUG Changing event name from before-call.apigateway to before-call.api-gateway MainThread
+2021-04-17 16:48:07,166 DEBUG Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict MainThread
+2021-04-17 16:48:07,167 DEBUG Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration MainThread
+2021-04-17 16:48:07,168 DEBUG Changing event name from before-parameter-build.route53 to before-parameter-build.route-53 MainThread
+2021-04-17 16:48:07,168 DEBUG Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search MainThread
+2021-04-17 16:48:07,169 DEBUG Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section MainThread
+2021-04-17 16:48:07,172 DEBUG Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask MainThread
+2021-04-17 16:48:07,172 DEBUG Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section MainThread
+2021-04-17 16:48:07,172 DEBUG Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search MainThread
+2021-04-17 16:48:07,172 DEBUG Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section MainThread
+2021-04-17 16:48:07,178 DEBUG IMDS ENDPOINT: http://169.254.169.254/ MainThread
+2021-04-17 16:48:07,180 DEBUG Looking for credentials via: env MainThread
+2021-04-17 16:48:07,180 DEBUG Looking for credentials via: assume-role MainThread
+2021-04-17 16:48:07,180 DEBUG Looking for credentials via: assume-role-with-web-identity MainThread
+2021-04-17 16:48:07,180 DEBUG Looking for credentials via: sso MainThread
+2021-04-17 16:48:07,180 DEBUG Looking for credentials via: shared-credentials-file MainThread
+2021-04-17 16:48:07,180 INFO Found credentials in shared credentials file: ~/.aws/credentials MainThread
+2021-04-17 16:48:07,181 DEBUG Loading JSON file: /home/ubuntu/project/lib/python3.8/site-packages/botocore/data/endpoints.json MainThread
+2021-04-17 16:48:07,188 DEBUG Event choose-service-name: calling handler <function handle_service_name_alias at 0x7f6df64cddc0> MainThread
+2021-04-17 16:48:07,199 DEBUG Loading JSON file: /home/ubuntu/project/lib/python3.8/site-packages/botocore/data/rekognition/2016-06-27/service-2.json MainThread
+2021-04-17 16:48:07,204 DEBUG Event creating-client-class.rekognition: calling handler <function add_generate_presigned_url at 0x7f6df64fec10> MainThread
+2021-04-17 16:48:07,205 DEBUG Setting rekognition timeout as (60, 60) MainThread
+2021-04-17 16:48:07,206 DEBUG Loading JSON file: /home/ubuntu/project/lib/python3.8/site-packages/botocore/data/_retry.json MainThread
+2021-04-17 16:48:07,206 DEBUG Registering retry handlers for service: rekognition MainThread
+2021-04-17 16:48:07,206 DEBUG Event before-parameter-build.rekognition.DetectLabels: calling handler <function generate_idempotent_uuid at 0x7f6df6473310> MainThread
+2021-04-17 16:48:07,207 DEBUG Event before-call.rekognition.DetectLabels: calling handler <function inject_api_version_header_if_needed at 0x7f6df647bb80> MainThread
+2021-04-17 16:48:07,207 DEBUG Making request for OperationModel(name=DetectLabels) with params: {'url_path': '/', 'query_string': '', 'method': 'POST', 'headers': {'X-Amz-Target': 'RekognitionService.DetectLabels', 'Content-Type': 'application/x-amz-json-1.1', 'User-Agent': 'Boto3/1.17.53 Python/3.8.5 Linux/5.4.0-1038-aws Botocore/1.20.53'}, 'body': b'{"Image": {"S3Object": {"Bucket": "ubunturekbucket1", "Name": "test.jpg"}}, "MaxLabels": 20, "MinConfidence": 90}', 'url': 'https://rekognition.us-east-2.amazonaws.com/', 'context': {'client_region': 'us-east-2', 'client_config': <botocore.config.Config object at 0x7f6df6024070>, 'has_streaming_input': False, 'auth_type': None}} MainThread
+2021-04-17 16:48:07,207 DEBUG Event request-created.rekognition.DetectLabels: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7f6df601ae50>> MainThread
+2021-04-17 16:48:07,207 DEBUG Event choose-signer.rekognition.DetectLabels: calling handler <function set_operation_specific_signer at 0x7f6df64731f0> MainThread
+2021-04-17 16:48:07,208 DEBUG Calculating signature using v4 auth. MainThread
+2021-04-17 16:48:07,208 DEBUG CanonicalRequest:
+POST
+/
+
+content-type:application/x-amz-json-1.1
+host:rekognition.us-east-2.amazonaws.com
+x-amz-date:20210417T164807Z
+x-amz-target:RekognitionService.DetectLabels
+
+content-type;host;x-amz-date;x-amz-target
+3a2635819a72a641a430e5dcc61aeb83ca91cc9d7d81e00f4e18bff4b94ef2a2 MainThread
+2021-04-17 16:48:07,208 DEBUG StringToSign:
+AWS4-HMAC-SHA256
+20210417T164807Z
+20210417/us-east-2/rekognition/aws4_request
+6f45ae59517d3e3bdea46ad608c9130cb2ec0f56d6118f55dca417cf0b060c17 MainThread
+2021-04-17 16:48:07,208 DEBUG Signature:
+f0be766bd0d38c789759f4f60e8acf355ee170d52ef7226aafeb3a4b194f8657 MainThread
+2021-04-17 16:48:07,208 DEBUG Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://rekognition.us-east-2.amazonaws.com/, headers={'X-Amz-Target': b'RekognitionService.DetectLabels', 'Content-Type': b'application/x-amz-json-1.1', 'User-Agent': b'Boto3/1.17.53 Python/3.8.5 Linux/5.4.0-1038-aws Botocore/1.20.53', 'X-Amz-Date': b'20210417T164807Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA5TZ7PCDVEDSLKFD3/20210417/us-east-2/rekognition/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-target, Signature=f0be766bd0d38c789759f4f60e8acf355ee170d52ef7226aafeb3a4b194f8657', 'Content-Length': '113'}> MainThread
+2021-04-17 16:48:07,209 DEBUG Certificate path: /home/ubuntu/project/lib/python3.8/site-packages/botocore/cacert.pem MainThread
+2021-04-17 16:48:07,209 DEBUG Starting new HTTPS connection (1): rekognition.us-east-2.amazonaws.com:443 MainThread
+2021-04-17 16:48:07,602 DEBUG https://rekognition.us-east-2.amazonaws.com:443 "POST / HTTP/1.1" 200 493 MainThread
+2021-04-17 16:48:07,602 DEBUG Response headers: {'Content-Type': 'application/x-amz-json-1.1', 'Date': 'Sat, 17 Apr 2021 16:48:06 GMT', 'x-amzn-RequestId': '771ce8cf-b8a0-4069-a380-e9b54a8de081', 'Content-Length': '493', 'Connection': 'keep-alive'} MainThread
+2021-04-17 16:48:07,603 DEBUG Response body:
+b'{"LabelModelVersion":"2.0","Labels":[{"Confidence":99.83163452148438,"Instances":[{"BoundingBox":{"Height":0.6820234060287476,"Left":0.016922079026699066,"Top":0.0660896971821785,"Width":0.935824453830719},"Confidence":99.83163452148438}],"Name":"Bridge","Parents":[{"Name":"Building"}]},{"Confidence":99.83163452148438,"Instances":[],"Name":"Building","Parents":[]},{"Confidence":95.00519561767578,"Instances":[],"Name":"Suspension Bridge","Parents":[{"Name":"Bridge"},{"Name":"Building"}]}]}' MainThread
+2021-04-17 16:48:07,603 DEBUG Event needs-retry.rekognition.DetectLabels: calling handler <botocore.retryhandler.RetryHandler object at 0x7f6df6024a00> MainThread
+2021-04-17 16:48:07,603 DEBUG No retry needed. MainThread
+2021-04-17 16:48:07,603 INFO Response received MainThread
+2021-04-17 16:48:07,605 WARNING Output: Bridge - 99.83163452148438 MainThread
+2021-04-17 16:48:07,605 WARNING Output: Building - 99.83163452148438 MainThread
+2021-04-17 16:48:07,605 WARNING Output: Suspension Bridge - 95.00519561767578 MainThread
+2021-04-17 16:48:33,411 INFO Starting rekognition service MainThread
+2021-04-17 16:48:33,411 DEBUG Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane MainThread
+2021-04-17 16:48:33,413 DEBUG Changing event name from before-call.apigateway to before-call.api-gateway MainThread
+2021-04-17 16:48:33,414 DEBUG Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict MainThread
+2021-04-17 16:48:33,416 DEBUG Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration MainThread
+2021-04-17 16:48:33,416 DEBUG Changing event name from before-parameter-build.route53 to before-parameter-build.route-53 MainThread
+2021-04-17 16:48:33,416 DEBUG Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search MainThread
+2021-04-17 16:48:33,417 DEBUG Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section MainThread
+2021-04-17 16:48:33,420 DEBUG Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask MainThread
+2021-04-17 16:48:33,420 DEBUG Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section MainThread
+2021-04-17 16:48:33,420 DEBUG Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search MainThread
+2021-04-17 16:48:33,420 DEBUG Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section MainThread
+2021-04-17 16:48:33,427 DEBUG IMDS ENDPOINT: http://169.254.169.254/ MainThread
+2021-04-17 16:48:33,428 DEBUG Looking for credentials via: env MainThread
+2021-04-17 16:48:33,429 DEBUG Looking for credentials via: assume-role MainThread
+2021-04-17 16:48:33,429 DEBUG Looking for credentials via: assume-role-with-web-identity MainThread
+2021-04-17 16:48:33,429 DEBUG Looking for credentials via: sso MainThread
+2021-04-17 16:48:33,429 DEBUG Looking for credentials via: shared-credentials-file MainThread
+2021-04-17 16:48:33,429 INFO Found credentials in shared credentials file: ~/.aws/credentials MainThread
+2021-04-17 16:48:33,430 DEBUG Loading JSON file: /home/ubuntu/project/lib/python3.8/site-packages/botocore/data/endpoints.json MainThread
+2021-04-17 16:48:33,438 DEBUG Event choose-service-name: calling handler <function handle_service_name_alias at 0x7f3a3f4d0dc0> MainThread
+2021-04-17 16:48:33,444 DEBUG Loading JSON file: /home/ubuntu/project/lib/python3.8/site-packages/botocore/data/rekognition/2016-06-27/service-2.json MainThread
+2021-04-17 16:48:33,449 DEBUG Event creating-client-class.rekognition: calling handler <function add_generate_presigned_url at 0x7f3a3f501c10> MainThread
+2021-04-17 16:48:33,451 DEBUG Setting rekognition timeout as (60, 60) MainThread
+2021-04-17 16:48:33,451 DEBUG Loading JSON file: /home/ubuntu/project/lib/python3.8/site-packages/botocore/data/_retry.json MainThread
+2021-04-17 16:48:33,452 DEBUG Registering retry handlers for service: rekognition MainThread
+2021-04-17 16:48:33,452 DEBUG Event before-parameter-build.rekognition.DetectLabels: calling handler <function generate_idempotent_uuid at 0x7f3a3f479310> MainThread
+2021-04-17 16:48:33,453 DEBUG Event before-call.rekognition.DetectLabels: calling handler <function inject_api_version_header_if_needed at 0x7f3a3f47eb80> MainThread
+2021-04-17 16:48:33,453 DEBUG Making request for OperationModel(name=DetectLabels) with params: {'url_path': '/', 'query_string': '', 'method': 'POST', 'headers': {'X-Amz-Target': 'RekognitionService.DetectLabels', 'Content-Type': 'application/x-amz-json-1.1', 'User-Agent': 'Boto3/1.17.53 Python/3.8.5 Linux/5.4.0-1038-aws Botocore/1.20.53'}, 'body': b'{"Image": {"S3Object": {"Bucket": "ubunturekbucket1", "Name": "test.jpg"}}, "MaxLabels": 20, "MinConfidence": 90}', 'url': 'https://rekognition.us-east-2.amazonaws.com/', 'context': {'client_region': 'us-east-2', 'client_config': <botocore.config.Config object at 0x7f3a3f027070>, 'has_streaming_input': False, 'auth_type': None}} MainThread
+2021-04-17 16:48:33,453 DEBUG Event request-created.rekognition.DetectLabels: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7f3a3f01de50>> MainThread
+2021-04-17 16:48:33,453 DEBUG Event choose-signer.rekognition.DetectLabels: calling handler <function set_operation_specific_signer at 0x7f3a3f4791f0> MainThread
+2021-04-17 16:48:33,453 DEBUG Calculating signature using v4 auth. MainThread
+2021-04-17 16:48:33,454 DEBUG CanonicalRequest:
+POST
+/
+
+content-type:application/x-amz-json-1.1
+host:rekognition.us-east-2.amazonaws.com
+x-amz-date:20210417T164833Z
+x-amz-target:RekognitionService.DetectLabels
+
+content-type;host;x-amz-date;x-amz-target
+3a2635819a72a641a430e5dcc61aeb83ca91cc9d7d81e00f4e18bff4b94ef2a2 MainThread
+2021-04-17 16:48:33,454 DEBUG StringToSign:
+AWS4-HMAC-SHA256
+20210417T164833Z
+20210417/us-east-2/rekognition/aws4_request
+9430c83034d3b660424906368cdbc6e8390d9ab93e3fa162599108ec6b4ecc60 MainThread
+2021-04-17 16:48:33,454 DEBUG Signature:
+28af70e3557016c427ceb3b4d4855c67e3e03a2e9d00c191acf4036c02a8df3f MainThread
+2021-04-17 16:48:33,454 DEBUG Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://rekognition.us-east-2.amazonaws.com/, headers={'X-Amz-Target': b'RekognitionService.DetectLabels', 'Content-Type': b'application/x-amz-json-1.1', 'User-Agent': b'Boto3/1.17.53 Python/3.8.5 Linux/5.4.0-1038-aws Botocore/1.20.53', 'X-Amz-Date': b'20210417T164833Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA5TZ7PCDVEDSLKFD3/20210417/us-east-2/rekognition/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-target, Signature=28af70e3557016c427ceb3b4d4855c67e3e03a2e9d00c191acf4036c02a8df3f', 'Content-Length': '113'}> MainThread
+2021-04-17 16:48:33,454 DEBUG Certificate path: /home/ubuntu/project/lib/python3.8/site-packages/botocore/cacert.pem MainThread
+2021-04-17 16:48:33,455 DEBUG Starting new HTTPS connection (1): rekognition.us-east-2.amazonaws.com:443 MainThread
+2021-04-17 16:48:33,861 DEBUG https://rekognition.us-east-2.amazonaws.com:443 "POST / HTTP/1.1" 200 493 MainThread
+2021-04-17 16:48:33,862 DEBUG Response headers: {'Content-Type': 'application/x-amz-json-1.1', 'Date': 'Sat, 17 Apr 2021 16:48:33 GMT', 'x-amzn-RequestId': '6e995525-1ec6-40e1-af7c-5e518418fe77', 'Content-Length': '493', 'Connection': 'keep-alive'} MainThread
+2021-04-17 16:48:33,862 DEBUG Response body:
+b'{"LabelModelVersion":"2.0","Labels":[{"Confidence":99.83163452148438,"Instances":[{"BoundingBox":{"Height":0.6820234060287476,"Left":0.016922079026699066,"Top":0.0660896971821785,"Width":0.935824453830719},"Confidence":99.83163452148438}],"Name":"Bridge","Parents":[{"Name":"Building"}]},{"Confidence":99.83163452148438,"Instances":[],"Name":"Building","Parents":[]},{"Confidence":95.00519561767578,"Instances":[],"Name":"Suspension Bridge","Parents":[{"Name":"Bridge"},{"Name":"Building"}]}]}' MainThread
+2021-04-17 16:48:33,863 DEBUG Event needs-retry.rekognition.DetectLabels: calling handler <botocore.retryhandler.RetryHandler object at 0x7f3a3f027a00> MainThread
+2021-04-17 16:48:33,863 DEBUG No retry needed. MainThread
+2021-04-17 16:48:33,863 INFO Response received MainThread
+2021-04-17 16:48:33,864 WARNING Output: Bridge - 99.83163452148438 MainThread
+2021-04-17 16:48:33,864 WARNING Output: Building - 99.83163452148438 MainThread
+2021-04-17 16:48:33,864 WARNING Output: Suspension Bridge - 95.00519561767578 MainThread
+2021-04-17 16:51:36,246 INFO Starting rekognition service MainThread
+2021-04-17 16:51:36,247 DEBUG Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane MainThread
+2021-04-17 16:51:36,249 DEBUG Changing event name from before-call.apigateway to before-call.api-gateway MainThread
+2021-04-17 16:51:36,249 DEBUG Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict MainThread
+2021-04-17 16:51:36,251 DEBUG Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration MainThread
+2021-04-17 16:51:36,251 DEBUG Changing event name from before-parameter-build.route53 to before-parameter-build.route-53 MainThread
+2021-04-17 16:51:36,251 DEBUG Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search MainThread
+2021-04-17 16:51:36,252 DEBUG Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section MainThread
+2021-04-17 16:51:36,255 DEBUG Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask MainThread
+2021-04-17 16:51:36,255 DEBUG Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section MainThread
+2021-04-17 16:51:36,255 DEBUG Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search MainThread
+2021-04-17 16:51:36,255 DEBUG Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section MainThread
+2021-04-17 16:51:36,261 DEBUG IMDS ENDPOINT: http://169.254.169.254/ MainThread
+2021-04-17 16:51:36,263 DEBUG Looking for credentials via: env MainThread
+2021-04-17 16:51:36,263 DEBUG Looking for credentials via: assume-role MainThread
+2021-04-17 16:51:36,263 DEBUG Looking for credentials via: assume-role-with-web-identity MainThread
+2021-04-17 16:51:36,263 DEBUG Looking for credentials via: sso MainThread
+2021-04-17 16:51:36,263 DEBUG Looking for credentials via: shared-credentials-file MainThread
+2021-04-17 16:51:36,263 INFO Found credentials in shared credentials file: ~/.aws/credentials MainThread
+2021-04-17 16:51:36,264 DEBUG Loading JSON file: /home/ubuntu/project/lib/python3.8/site-packages/botocore/data/endpoints.json MainThread
+2021-04-17 16:51:36,271 DEBUG Event choose-service-name: calling handler <function handle_service_name_alias at 0x7f1d502f3ee0> MainThread
+2021-04-17 16:51:36,278 DEBUG Loading JSON file: /home/ubuntu/project/lib/python3.8/site-packages/botocore/data/rekognition/2016-06-27/service-2.json MainThread
+2021-04-17 16:51:36,282 DEBUG Event creating-client-class.rekognition: calling handler <function add_generate_presigned_url at 0x7f1d50324d30> MainThread
+2021-04-17 16:51:36,284 DEBUG Setting rekognition timeout as (60, 60) MainThread
+2021-04-17 16:51:36,284 DEBUG Loading JSON file: /home/ubuntu/project/lib/python3.8/site-packages/botocore/data/_retry.json MainThread
+2021-04-17 16:51:36,284 DEBUG Registering retry handlers for service: rekognition MainThread
+2021-04-17 16:51:36,285 DEBUG Event before-parameter-build.rekognition.DetectLabels: calling handler <function generate_idempotent_uuid at 0x7f1d50299430> MainThread
+2021-04-17 16:51:36,285 DEBUG Event before-call.rekognition.DetectLabels: calling handler <function inject_api_version_header_if_needed at 0x7f1d5029eca0> MainThread
+2021-04-17 16:51:36,285 DEBUG Making request for OperationModel(name=DetectLabels) with params: {'url_path': '/', 'query_string': '', 'method': 'POST', 'headers': {'X-Amz-Target': 'RekognitionService.DetectLabels', 'Content-Type': 'application/x-amz-json-1.1', 'User-Agent': 'Boto3/1.17.53 Python/3.8.5 Linux/5.4.0-1038-aws Botocore/1.20.53'}, 'body': b'{"Image": {"S3Object": {"Bucket": "ubunturekbucket1", "Name": "test.jpg"}}, "MaxLabels": 20, "MinConfidence": 90}', 'url': 'https://rekognition.us-east-2.amazonaws.com/', 'context': {'client_region': 'us-east-2', 'client_config': <botocore.config.Config object at 0x7f1d4fe49040>, 'has_streaming_input': False, 'auth_type': None}} MainThread
+2021-04-17 16:51:36,286 DEBUG Event request-created.rekognition.DetectLabels: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7f1d4fe40e20>> MainThread
+2021-04-17 16:51:36,286 DEBUG Event choose-signer.rekognition.DetectLabels: calling handler <function set_operation_specific_signer at 0x7f1d50299310> MainThread
+2021-04-17 16:51:36,286 DEBUG Calculating signature using v4 auth. MainThread
+2021-04-17 16:51:36,286 DEBUG CanonicalRequest:
+POST
+/
+
+content-type:application/x-amz-json-1.1
+host:rekognition.us-east-2.amazonaws.com
+x-amz-date:20210417T165136Z
+x-amz-target:RekognitionService.DetectLabels
+
+content-type;host;x-amz-date;x-amz-target
+3a2635819a72a641a430e5dcc61aeb83ca91cc9d7d81e00f4e18bff4b94ef2a2 MainThread
+2021-04-17 16:51:36,286 DEBUG StringToSign:
+AWS4-HMAC-SHA256
+20210417T165136Z
+20210417/us-east-2/rekognition/aws4_request
+fbf3d1a178cad76029a32692d295caf51838cf21f8ec0461bad3dc43790dc3ef MainThread
+2021-04-17 16:51:36,286 DEBUG Signature:
+b98f709d9e97baaf57cbd99a35977bfeec63a453a19b799e8097befb588e295c MainThread
+2021-04-17 16:51:36,287 DEBUG Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://rekognition.us-east-2.amazonaws.com/, headers={'X-Amz-Target': b'RekognitionService.DetectLabels', 'Content-Type': b'application/x-amz-json-1.1', 'User-Agent': b'Boto3/1.17.53 Python/3.8.5 Linux/5.4.0-1038-aws Botocore/1.20.53', 'X-Amz-Date': b'20210417T165136Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA5TZ7PCDVEDSLKFD3/20210417/us-east-2/rekognition/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-target, Signature=b98f709d9e97baaf57cbd99a35977bfeec63a453a19b799e8097befb588e295c', 'Content-Length': '113'}> MainThread
+2021-04-17 16:51:36,287 DEBUG Certificate path: /home/ubuntu/project/lib/python3.8/site-packages/botocore/cacert.pem MainThread
+2021-04-17 16:51:36,287 DEBUG Starting new HTTPS connection (1): rekognition.us-east-2.amazonaws.com:443 MainThread
+2021-04-17 16:51:36,667 DEBUG https://rekognition.us-east-2.amazonaws.com:443 "POST / HTTP/1.1" 200 493 MainThread
+2021-04-17 16:51:36,668 DEBUG Response headers: {'Content-Type': 'application/x-amz-json-1.1', 'Date': 'Sat, 17 Apr 2021 16:51:36 GMT', 'x-amzn-RequestId': '3c46ef2c-28ee-4dbb-a528-a97b6412c2c9', 'Content-Length': '493', 'Connection': 'keep-alive'} MainThread
+2021-04-17 16:51:36,668 DEBUG Response body:
+b'{"LabelModelVersion":"2.0","Labels":[{"Confidence":99.83163452148438,"Instances":[{"BoundingBox":{"Height":0.6820234060287476,"Left":0.016922079026699066,"Top":0.0660896971821785,"Width":0.935824453830719},"Confidence":99.83163452148438}],"Name":"Bridge","Parents":[{"Name":"Building"}]},{"Confidence":99.83163452148438,"Instances":[],"Name":"Building","Parents":[]},{"Confidence":95.00519561767578,"Instances":[],"Name":"Suspension Bridge","Parents":[{"Name":"Bridge"},{"Name":"Building"}]}]}' MainThread
+2021-04-17 16:51:36,669 DEBUG Event needs-retry.rekognition.DetectLabels: calling handler <botocore.retryhandler.RetryHandler object at 0x7f1d4fe499d0> MainThread
+2021-04-17 16:51:36,669 DEBUG No retry needed. MainThread
+2021-04-17 16:51:36,669 INFO Response received MainThread
+2021-04-17 16:51:36,670 WARNING Output: Bridge - 99.83163452148438 MainThread
+2021-04-17 16:51:36,670 WARNING Output: Building - 99.83163452148438 MainThread
+2021-04-17 16:51:36,670 WARNING Output: Suspension Bridge - 95.00519561767578 MainThread
