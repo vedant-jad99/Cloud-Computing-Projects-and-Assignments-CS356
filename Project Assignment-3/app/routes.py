@@ -40,7 +40,7 @@ def save_picture(image):
     return pic_fn
 
 #Detecting labels from image using aws rekognition
-def detect_labels(bucket, key, max_labels=20, min_confidence=90, region="us-east-2"):
+def detect_labels(bucket, key, max_labels=20, min_confidence=88888888on="us-east-2"):
     app.logger.info("Starting rekognition service")
     rekognition = boto.client("rekognition", region)
     try:
