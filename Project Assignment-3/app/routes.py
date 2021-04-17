@@ -7,6 +7,7 @@ import secrets
 import os
 import boto3 as boto
 
+BUCKET = open("bucket-name.txt", "r").read().strip().lower()
 
 # Opening the image file
 def open_img(filename):
@@ -20,8 +21,7 @@ def upload_to_s3(filename):
     try:
         data = open_img(filename)
         key = filename.split('/')[-1]
-        print(key)
-        s3.Bucket('ubunturekbucket1').put_object(Key=key, Body=data)
+        s3.Bucket(BUCKET).put_object(Key=key, Body=data)
         app.logger.info("Upload successful!")
     except Exception as e:
         app.logger.error(e)
@@ -39,6 +39,26 @@ def save_picture(image):
     upload_to_s3(pic_path)
     return pic_fn
 
+#Detecting labels from image using aws rekognition
+def detect_labels(bucket, key, max_labels=20, min_confidence=90, region="us-east-2"):
+    app.logger.info("Starting rekognition service")
+    rekognition = boto.client("rekognition", region)
+    try:
+        response = rekognition.detect_labels(
+        Image={
+            "S3Object": {
+    	    "Bucket": bucket,
+    	    "Name": key,
+            }
+        },
+        MaxLabels=max_labels,
+        MinConfidence=min_confidence)
+        app.logger.info("Response received")
+        return response['Labels']
+    except Exception as e:
+        app.logger.error(e)
+
+
 
 #Main home route. This page will be displayed as soon as user visits the app.
 
@@ -47,9 +67,10 @@ def save_picture(image):
 def home():
     #Main home function
 
-    form, pic_file = UploadPicture(), None
+    form, pic_file, labels = UploadPicture(), None, None
     if form.validate_on_submit():
         app.logger.info("File format verified")
         if form.image.data:
             pic_file = save_picture(form.image.data)
-    return render_template("main.html", title="Rekognition demo app", form=form, name=pic_file)
+            labels = detect_labels(BUCKET, pic_file)
+    return render_template("main.html", title="Rekognition demo app", form=form, name=pic_file, labels=labels)
