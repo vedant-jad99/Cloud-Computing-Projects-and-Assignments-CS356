@@ -1,0 +1,206 @@
+2021-04-17 10:02:05,235 DEBUG Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane MainThread
+2021-04-17 10:02:05,236 DEBUG Changing event name from before-call.apigateway to before-call.api-gateway MainThread
+2021-04-17 10:02:05,237 DEBUG Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict MainThread
+2021-04-17 10:02:05,239 DEBUG Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration MainThread
+2021-04-17 10:02:05,239 DEBUG Changing event name from before-parameter-build.route53 to before-parameter-build.route-53 MainThread
+2021-04-17 10:02:05,239 DEBUG Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search MainThread
+2021-04-17 10:02:05,240 DEBUG Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section MainThread
+2021-04-17 10:02:05,243 DEBUG Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask MainThread
+2021-04-17 10:02:05,243 DEBUG Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section MainThread
+2021-04-17 10:02:05,243 DEBUG Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search MainThread
+2021-04-17 10:02:05,243 DEBUG Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section MainThread
+2021-04-17 10:02:05,253 DEBUG Loading JSON file: /home/ubuntu/project/lib/python3.8/site-packages/boto3/data/s3/2006-03-01/resources-1.json MainThread
+2021-04-17 10:02:05,256 DEBUG IMDS ENDPOINT: http://169.254.169.254/ MainThread
+2021-04-17 10:02:05,258 DEBUG Looking for credentials via: env MainThread
+2021-04-17 10:02:05,258 DEBUG Looking for credentials via: assume-role MainThread
+2021-04-17 10:02:05,258 DEBUG Looking for credentials via: assume-role-with-web-identity MainThread
+2021-04-17 10:02:05,258 DEBUG Looking for credentials via: sso MainThread
+2021-04-17 10:02:05,258 DEBUG Looking for credentials via: shared-credentials-file MainThread
+2021-04-17 10:02:05,258 INFO Found credentials in shared credentials file: ~/.aws/credentials MainThread
+2021-04-17 10:02:05,259 DEBUG Loading JSON file: /home/ubuntu/project/lib/python3.8/site-packages/botocore/data/endpoints.json MainThread
+2021-04-17 10:02:05,266 DEBUG Event choose-service-name: calling handler <function handle_service_name_alias at 0x7f9835375ee0> MainThread
+2021-04-17 10:02:05,273 DEBUG Loading JSON file: /home/ubuntu/project/lib/python3.8/site-packages/botocore/data/s3/2006-03-01/service-2.json MainThread
+2021-04-17 10:02:05,282 DEBUG Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x7f98353a7f70> MainThread
+2021-04-17 10:02:05,282 DEBUG Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x7f9835306dc0> MainThread
+2021-04-17 10:02:05,299 DEBUG Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x7f98353a7d30> MainThread
+2021-04-17 10:02:05,301 DEBUG Setting s3 timeout as (60, 60) MainThread
+2021-04-17 10:02:05,301 DEBUG Loading JSON file: /home/ubuntu/project/lib/python3.8/site-packages/botocore/data/_retry.json MainThread
+2021-04-17 10:02:05,302 DEBUG Registering retry handlers for service: s3 MainThread
+2021-04-17 10:02:05,303 DEBUG Loading s3:s3 MainThread
+2021-04-17 10:02:05,304 ERROR [Errno 2] No such file or directory: 'demo.jpg' MainThread
+2021-04-17 10:03:17,729 DEBUG Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane MainThread
+2021-04-17 10:03:17,730 DEBUG Changing event name from before-call.apigateway to before-call.api-gateway MainThread
+2021-04-17 10:03:17,731 DEBUG Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict MainThread
+2021-04-17 10:03:17,733 DEBUG Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration MainThread
+2021-04-17 10:03:17,733 DEBUG Changing event name from before-parameter-build.route53 to before-parameter-build.route-53 MainThread
+2021-04-17 10:03:17,733 DEBUG Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search MainThread
+2021-04-17 10:03:17,734 DEBUG Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section MainThread
+2021-04-17 10:03:17,737 DEBUG Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask MainThread
+2021-04-17 10:03:17,737 DEBUG Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section MainThread
+2021-04-17 10:03:17,737 DEBUG Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search MainThread
+2021-04-17 10:03:17,737 DEBUG Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section MainThread
+2021-04-17 10:03:17,747 DEBUG Loading JSON file: /home/ubuntu/project/lib/python3.8/site-packages/boto3/data/s3/2006-03-01/resources-1.json MainThread
+2021-04-17 10:03:17,751 DEBUG IMDS ENDPOINT: http://169.254.169.254/ MainThread
+2021-04-17 10:03:17,752 DEBUG Looking for credentials via: env MainThread
+2021-04-17 10:03:17,752 DEBUG Looking for credentials via: assume-role MainThread
+2021-04-17 10:03:17,752 DEBUG Looking for credentials via: assume-role-with-web-identity MainThread
+2021-04-17 10:03:17,752 DEBUG Looking for credentials via: sso MainThread
+2021-04-17 10:03:17,752 DEBUG Looking for credentials via: shared-credentials-file MainThread
+2021-04-17 10:03:17,753 INFO Found credentials in shared credentials file: ~/.aws/credentials MainThread
+2021-04-17 10:03:17,753 DEBUG Loading JSON file: /home/ubuntu/project/lib/python3.8/site-packages/botocore/data/endpoints.json MainThread
+2021-04-17 10:03:17,760 DEBUG Event choose-service-name: calling handler <function handle_service_name_alias at 0x7fa70d9f6ee0> MainThread
+2021-04-17 10:03:17,768 DEBUG Loading JSON file: /home/ubuntu/project/lib/python3.8/site-packages/botocore/data/s3/2006-03-01/service-2.json MainThread
+2021-04-17 10:03:17,777 DEBUG Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x7fa70da28f70> MainThread
+2021-04-17 10:03:17,777 DEBUG Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x7fa70d987dc0> MainThread
+2021-04-17 10:03:17,794 DEBUG Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x7fa70da28d30> MainThread
+2021-04-17 10:03:17,796 DEBUG Setting s3 timeout as (60, 60) MainThread
+2021-04-17 10:03:17,796 DEBUG Loading JSON file: /home/ubuntu/project/lib/python3.8/site-packages/botocore/data/_retry.json MainThread
+2021-04-17 10:03:17,797 DEBUG Registering retry handlers for service: s3 MainThread
+2021-04-17 10:03:17,798 DEBUG Loading s3:s3 MainThread
+2021-04-17 10:03:17,799 INFO data <_io.BufferedReader name='test.jpg'> MainThread
+2021-04-17 10:03:17,799 DEBUG Loading s3:Bucket MainThread
+2021-04-17 10:03:17,799 DEBUG Renaming Bucket attribute name MainThread
+2021-04-17 10:03:17,800 DEBUG Event creating-resource-class.s3.Bucket: calling handler <function lazy_call.<locals>._handler at 0x7fa70d987ee0> MainThread
+2021-04-17 10:03:17,800 DEBUG Calling s3:put_object with {'Bucket': 'dfjljfd', 'Key': 'test.jpg', 'Body': <_io.BufferedReader name='test.jpg'>} MainThread
+2021-04-17 10:03:17,801 DEBUG Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x7fa70d9a0280> MainThread
+2021-04-17 10:03:17,801 DEBUG Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x7fa70d99d670> MainThread
+2021-04-17 10:03:17,801 DEBUG Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x7fa70d9a0b80> MainThread
+2021-04-17 10:03:17,801 DEBUG Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x7fa70d99d5e0> MainThread
+2021-04-17 10:03:17,801 DEBUG Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x7fa70d3ecc40>> MainThread
+2021-04-17 10:03:17,801 DEBUG Event before-parameter-build.s3.PutObject: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x7fa70d3ecd00>> MainThread
+2021-04-17 10:03:17,801 DEBUG Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x7fa70d99d430> MainThread
+2021-04-17 10:03:17,801 DEBUG Event before-call.s3.PutObject: calling handler <function conditionally_calculate_md5 at 0x7fa70db99040> MainThread
+2021-04-17 10:03:17,802 DEBUG Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x7fa70d99d940> MainThread
+2021-04-17 10:03:17,802 DEBUG Adding expect 100 continue header to request. MainThread
+2021-04-17 10:03:17,802 DEBUG Event before-call.s3.PutObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x7fa70d3ecc40>> MainThread
+2021-04-17 10:03:17,802 DEBUG Event before-call.s3.PutObject: calling handler <function inject_api_version_header_if_needed at 0x7fa70d9a0ca0> MainThread
+2021-04-17 10:03:17,802 DEBUG Making request for OperationModel(name=PutObject) with params: {'url_path': '/dfjljfd/test.jpg', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.17.53 Python/3.8.5 Linux/5.4.0-1038-aws Botocore/1.20.53 Resource', 'Content-MD5': 'r15crVORsdRzyx/CpRASXA==', 'Expect': '100-continue'}, 'body': <_io.BufferedReader name='test.jpg'>, 'url': 'https://s3.us-east-2.amazonaws.com/dfjljfd/test.jpg', 'context': {'client_region': 'us-east-2', 'client_config': <botocore.config.Config object at 0x7fa70d355eb0>, 'has_streaming_input': True, 'auth_type': None, 'signing': {'bucket': 'dfjljfd'}}} MainThread
+2021-04-17 10:03:17,802 DEBUG Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7fa70d355b20>> MainThread
+2021-04-17 10:03:17,802 DEBUG Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x7fa70d99d310> MainThread
+2021-04-17 10:03:17,802 DEBUG Event before-sign.s3.PutObject: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x7fa70d3ecd90>> MainThread
+2021-04-17 10:03:17,803 DEBUG Defaulting to S3 virtual host style addressing with path style addressing fallback. MainThread
+2021-04-17 10:03:17,803 DEBUG Checking for DNS compatible bucket for: https://s3.us-east-2.amazonaws.com/dfjljfd/test.jpg MainThread
+2021-04-17 10:03:17,803 DEBUG URI updated to: https://dfjljfd.s3.us-east-2.amazonaws.com/test.jpg MainThread
+2021-04-17 10:03:17,803 DEBUG Calculating signature using v4 auth. MainThread
+2021-04-17 10:03:17,803 DEBUG CanonicalRequest:
+PUT
+/test.jpg
+
+content-md5:r15crVORsdRzyx/CpRASXA==
+host:dfjljfd.s3.us-east-2.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20210417T100317Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD MainThread
+2021-04-17 10:03:17,803 DEBUG StringToSign:
+AWS4-HMAC-SHA256
+20210417T100317Z
+20210417/us-east-2/s3/aws4_request
+670e73da32d8e027f9deba29b51825294b87453afc81ab9598c2a690400c9c56 MainThread
+2021-04-17 10:03:17,803 DEBUG Signature:
+f09c09f7958aac13ac5b25b946c0e28b804376f8062bbcd022f3f479a8420238 MainThread
+2021-04-17 10:03:17,803 DEBUG Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://dfjljfd.s3.us-east-2.amazonaws.com/test.jpg, headers={'User-Agent': b'Boto3/1.17.53 Python/3.8.5 Linux/5.4.0-1038-aws Botocore/1.20.53 Resource', 'Content-MD5': b'r15crVORsdRzyx/CpRASXA==', 'Expect': b'100-continue', 'X-Amz-Date': b'20210417T100317Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA5TZ7PCDVEDSLKFD3/20210417/us-east-2/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=f09c09f7958aac13ac5b25b946c0e28b804376f8062bbcd022f3f479a8420238', 'Content-Length': '67579'}> MainThread
+2021-04-17 10:03:17,804 DEBUG Certificate path: /home/ubuntu/project/lib/python3.8/site-packages/botocore/cacert.pem MainThread
+2021-04-17 10:03:17,804 DEBUG Starting new HTTPS connection (1): dfjljfd.s3.us-east-2.amazonaws.com:443 MainThread
+2021-04-17 10:03:17,829 DEBUG Waiting for 100 Continue response. MainThread
+2021-04-17 10:03:17,861 DEBUG Received a non 100 Continue response from the server, NOT sending request body. MainThread
+2021-04-17 10:03:17,861 DEBUG https://dfjljfd.s3.us-east-2.amazonaws.com:443 "PUT /test.jpg HTTP/1.1" 404 None MainThread
+2021-04-17 10:03:17,861 DEBUG Response headers: {'x-amz-request-id': 'QEJK2ERQFKR1WF1A', 'x-amz-id-2': 'ziloVzirVXcq9rm149lhW7yTBRmRD7Dd8NU6bs9GuJdn0CInwO5hWy3nK5uQO/JHb/F3EV29dns=', 'Content-Type': 'application/xml', 'Transfer-Encoding': 'chunked', 'Date': 'Sat, 17 Apr 2021 10:03:17 GMT', 'Server': 'AmazonS3', 'Connection': 'close'} MainThread
+2021-04-17 10:03:17,862 DEBUG Response body:
+b'<?xml version="1.0" encoding="UTF-8"?>\n<Error><Code>NoSuchBucket</Code><Message>The specified bucket does not exist</Message><BucketName>dfjljfd</BucketName><RequestId>QEJK2ERQFKR1WF1A</RequestId><HostId>ziloVzirVXcq9rm149lhW7yTBRmRD7Dd8NU6bs9GuJdn0CInwO5hWy3nK5uQO/JHb/F3EV29dns=</HostId></Error>' MainThread
+2021-04-17 10:03:17,863 DEBUG Response headers: {'x-amz-request-id': 'QEJK2ERQFKR1WF1A', 'x-amz-id-2': 'ziloVzirVXcq9rm149lhW7yTBRmRD7Dd8NU6bs9GuJdn0CInwO5hWy3nK5uQO/JHb/F3EV29dns=', 'Content-Type': 'application/xml', 'Transfer-Encoding': 'chunked', 'Date': 'Sat, 17 Apr 2021 10:03:17 GMT', 'Server': 'AmazonS3', 'Connection': 'close'} MainThread
+2021-04-17 10:03:17,863 DEBUG Response body:
+b'<?xml version="1.0" encoding="UTF-8"?>\n<Error><Code>NoSuchBucket</Code><Message>The specified bucket does not exist</Message><BucketName>dfjljfd</BucketName><RequestId>QEJK2ERQFKR1WF1A</RequestId><HostId>ziloVzirVXcq9rm149lhW7yTBRmRD7Dd8NU6bs9GuJdn0CInwO5hWy3nK5uQO/JHb/F3EV29dns=</HostId></Error>' MainThread
+2021-04-17 10:03:17,864 DEBUG Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x7fa70d3ecbe0> MainThread
+2021-04-17 10:03:17,864 DEBUG No retry needed. MainThread
+2021-04-17 10:03:17,864 DEBUG Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x7fa70d3ecc40>> MainThread
+2021-04-17 10:03:17,864 ERROR An error occurred (NoSuchBucket) when calling the PutObject operation: The specified bucket does not exist MainThread
+2021-04-17 10:04:28,727 DEBUG Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane MainThread
+2021-04-17 10:04:28,728 DEBUG Changing event name from before-call.apigateway to before-call.api-gateway MainThread
+2021-04-17 10:04:28,729 DEBUG Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict MainThread
+2021-04-17 10:04:28,731 DEBUG Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration MainThread
+2021-04-17 10:04:28,731 DEBUG Changing event name from before-parameter-build.route53 to before-parameter-build.route-53 MainThread
+2021-04-17 10:04:28,731 DEBUG Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search MainThread
+2021-04-17 10:04:28,732 DEBUG Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section MainThread
+2021-04-17 10:04:28,735 DEBUG Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask MainThread
+2021-04-17 10:04:28,735 DEBUG Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section MainThread
+2021-04-17 10:04:28,735 DEBUG Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search MainThread
+2021-04-17 10:04:28,735 DEBUG Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section MainThread
+2021-04-17 10:04:28,745 DEBUG Loading JSON file: /home/ubuntu/project/lib/python3.8/site-packages/boto3/data/s3/2006-03-01/resources-1.json MainThread
+2021-04-17 10:04:28,748 DEBUG IMDS ENDPOINT: http://169.254.169.254/ MainThread
+2021-04-17 10:04:28,750 DEBUG Looking for credentials via: env MainThread
+2021-04-17 10:04:28,750 DEBUG Looking for credentials via: assume-role MainThread
+2021-04-17 10:04:28,750 DEBUG Looking for credentials via: assume-role-with-web-identity MainThread
+2021-04-17 10:04:28,750 DEBUG Looking for credentials via: sso MainThread
+2021-04-17 10:04:28,750 DEBUG Looking for credentials via: shared-credentials-file MainThread
+2021-04-17 10:04:28,750 INFO Found credentials in shared credentials file: ~/.aws/credentials MainThread
+2021-04-17 10:04:28,751 DEBUG Loading JSON file: /home/ubuntu/project/lib/python3.8/site-packages/botocore/data/endpoints.json MainThread
+2021-04-17 10:04:28,758 DEBUG Event choose-service-name: calling handler <function handle_service_name_alias at 0x7fd370dcaee0> MainThread
+2021-04-17 10:04:28,765 DEBUG Loading JSON file: /home/ubuntu/project/lib/python3.8/site-packages/botocore/data/s3/2006-03-01/service-2.json MainThread
+2021-04-17 10:04:28,774 DEBUG Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x7fd370dfcf70> MainThread
+2021-04-17 10:04:28,774 DEBUG Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x7fd370d5bdc0> MainThread
+2021-04-17 10:04:28,792 DEBUG Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x7fd370dfcd30> MainThread
+2021-04-17 10:04:28,793 DEBUG Setting s3 timeout as (60, 60) MainThread
+2021-04-17 10:04:28,794 DEBUG Loading JSON file: /home/ubuntu/project/lib/python3.8/site-packages/botocore/data/_retry.json MainThread
+2021-04-17 10:04:28,794 DEBUG Registering retry handlers for service: s3 MainThread
+2021-04-17 10:04:28,795 DEBUG Loading s3:s3 MainThread
+2021-04-17 10:04:28,796 INFO data <_io.BufferedReader name='test.jpg'> MainThread
+2021-04-17 10:04:28,796 DEBUG Loading s3:Bucket MainThread
+2021-04-17 10:04:28,797 DEBUG Renaming Bucket attribute name MainThread
+2021-04-17 10:04:28,798 DEBUG Event creating-resource-class.s3.Bucket: calling handler <function lazy_call.<locals>._handler at 0x7fd370d5bee0> MainThread
+2021-04-17 10:04:28,798 DEBUG Calling s3:put_object with {'Bucket': 'ubunturekbucket1', 'Key': 'test.jpg', 'Body': <_io.BufferedReader name='test.jpg'>} MainThread
+2021-04-17 10:04:28,798 DEBUG Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x7fd370d74280> MainThread
+2021-04-17 10:04:28,798 DEBUG Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x7fd370d71670> MainThread
+2021-04-17 10:04:28,798 DEBUG Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x7fd370d74b80> MainThread
+2021-04-17 10:04:28,798 DEBUG Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x7fd370d715e0> MainThread
+2021-04-17 10:04:28,798 DEBUG Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x7fd3707c0c40>> MainThread
+2021-04-17 10:04:28,798 DEBUG Event before-parameter-build.s3.PutObject: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x7fd3707c0d00>> MainThread
+2021-04-17 10:04:28,798 DEBUG Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x7fd370d71430> MainThread
+2021-04-17 10:04:28,799 DEBUG Event before-call.s3.PutObject: calling handler <function conditionally_calculate_md5 at 0x7fd370f6d040> MainThread
+2021-04-17 10:04:28,799 DEBUG Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x7fd370d71940> MainThread
+2021-04-17 10:04:28,799 DEBUG Adding expect 100 continue header to request. MainThread
+2021-04-17 10:04:28,799 DEBUG Event before-call.s3.PutObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x7fd3707c0c40>> MainThread
+2021-04-17 10:04:28,799 DEBUG Event before-call.s3.PutObject: calling handler <function inject_api_version_header_if_needed at 0x7fd370d74ca0> MainThread
+2021-04-17 10:04:28,799 DEBUG Making request for OperationModel(name=PutObject) with params: {'url_path': '/ubunturekbucket1/test.jpg', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.17.53 Python/3.8.5 Linux/5.4.0-1038-aws Botocore/1.20.53 Resource', 'Content-MD5': 'r15crVORsdRzyx/CpRASXA==', 'Expect': '100-continue'}, 'body': <_io.BufferedReader name='test.jpg'>, 'url': 'https://s3.us-east-2.amazonaws.com/ubunturekbucket1/test.jpg', 'context': {'client_region': 'us-east-2', 'client_config': <botocore.config.Config object at 0x7fd370729eb0>, 'has_streaming_input': True, 'auth_type': None, 'signing': {'bucket': 'ubunturekbucket1'}}} MainThread
+2021-04-17 10:04:28,800 DEBUG Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7fd370729b20>> MainThread
+2021-04-17 10:04:28,800 DEBUG Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x7fd370d71310> MainThread
+2021-04-17 10:04:28,800 DEBUG Event before-sign.s3.PutObject: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x7fd3707c0d90>> MainThread
+2021-04-17 10:04:28,800 DEBUG Defaulting to S3 virtual host style addressing with path style addressing fallback. MainThread
+2021-04-17 10:04:28,800 DEBUG Checking for DNS compatible bucket for: https://s3.us-east-2.amazonaws.com/ubunturekbucket1/test.jpg MainThread
+2021-04-17 10:04:28,800 DEBUG URI updated to: https://ubunturekbucket1.s3.us-east-2.amazonaws.com/test.jpg MainThread
+2021-04-17 10:04:28,800 DEBUG Calculating signature using v4 auth. MainThread
+2021-04-17 10:04:28,801 DEBUG CanonicalRequest:
+PUT
+/test.jpg
+
+content-md5:r15crVORsdRzyx/CpRASXA==
+host:ubunturekbucket1.s3.us-east-2.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20210417T100428Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD MainThread
+2021-04-17 10:04:28,801 DEBUG StringToSign:
+AWS4-HMAC-SHA256
+20210417T100428Z
+20210417/us-east-2/s3/aws4_request
+8c5503925819c327f3f846c2b3d2ba659538397a552380d7c9c0fbfe9f27e354 MainThread
+2021-04-17 10:04:28,801 DEBUG Signature:
+594a572275f487ca5103a5d684da6268e0504ba0e9ddc89b3392920ec7d24454 MainThread
+2021-04-17 10:04:28,801 DEBUG Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://ubunturekbucket1.s3.us-east-2.amazonaws.com/test.jpg, headers={'User-Agent': b'Boto3/1.17.53 Python/3.8.5 Linux/5.4.0-1038-aws Botocore/1.20.53 Resource', 'Content-MD5': b'r15crVORsdRzyx/CpRASXA==', 'Expect': b'100-continue', 'X-Amz-Date': b'20210417T100428Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA5TZ7PCDVEDSLKFD3/20210417/us-east-2/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=594a572275f487ca5103a5d684da6268e0504ba0e9ddc89b3392920ec7d24454', 'Content-Length': '67579'}> MainThread
+2021-04-17 10:04:28,801 DEBUG Certificate path: /home/ubuntu/project/lib/python3.8/site-packages/botocore/cacert.pem MainThread
+2021-04-17 10:04:28,802 DEBUG Starting new HTTPS connection (1): ubunturekbucket1.s3.us-east-2.amazonaws.com:443 MainThread
+2021-04-17 10:04:28,831 DEBUG Waiting for 100 Continue response. MainThread
+2021-04-17 10:04:28,851 DEBUG 100 Continue response seen, now sending request body. MainThread
+2021-04-17 10:04:28,872 DEBUG https://ubunturekbucket1.s3.us-east-2.amazonaws.com:443 "PUT /test.jpg HTTP/1.1" 200 0 MainThread
+2021-04-17 10:04:28,872 DEBUG Response headers: {'x-amz-id-2': '44fGNt3ofpIhuX8Rw9YvydStmeI+EXvMOb11E8+s42y4aVk8na/8ZIb1oSEdfsiwrBal6+a64CQ=', 'x-amz-request-id': 'H4Z6F83QBAVWK8VE', 'Date': 'Sat, 17 Apr 2021 10:04:29 GMT', 'ETag': '"af5e5cad5391b1d473cb1fc2a510125c"', 'Content-Length': '0', 'Server': 'AmazonS3'} MainThread
+2021-04-17 10:04:28,873 DEBUG Response body:
+b'' MainThread
+2021-04-17 10:04:28,873 DEBUG Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x7fd3707c0be0> MainThread
+2021-04-17 10:04:28,873 DEBUG No retry needed. MainThread
+2021-04-17 10:04:28,873 DEBUG Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x7fd3707c0c40>> MainThread
+2021-04-17 10:04:28,873 DEBUG Response: {'ResponseMetadata': {'RequestId': 'H4Z6F83QBAVWK8VE', 'HostId': '44fGNt3ofpIhuX8Rw9YvydStmeI+EXvMOb11E8+s42y4aVk8na/8ZIb1oSEdfsiwrBal6+a64CQ=', 'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amz-id-2': '44fGNt3ofpIhuX8Rw9YvydStmeI+EXvMOb11E8+s42y4aVk8na/8ZIb1oSEdfsiwrBal6+a64CQ=', 'x-amz-request-id': 'H4Z6F83QBAVWK8VE', 'date': 'Sat, 17 Apr 2021 10:04:29 GMT', 'etag': '"af5e5cad5391b1d473cb1fc2a510125c"', 'content-length': '0', 'server': 'AmazonS3'}, 'RetryAttempts': 0}, 'ETag': '"af5e5cad5391b1d473cb1fc2a510125c"'} MainThread
+2021-04-17 10:04:28,873 DEBUG Loading s3:Object MainThread
+2021-04-17 10:04:28,875 DEBUG Event creating-resource-class.s3.Object: calling handler <function lazy_call.<locals>._handler at 0x7fd370d0b820> MainThread
+2021-04-17 10:04:28,875 INFO Upload successful! MainThread
