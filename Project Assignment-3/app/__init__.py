@@ -1,3 +1,5 @@
+#Basic config file. App created here
+
 from flask import Flask
 
 app = Flask(__name__)
