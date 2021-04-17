@@ -40,7 +40,21 @@
 		 </form>
 	    </div>
 	    <div class="container">
-		<h1>Result<h1>
+		<h1>Result</h1>
+		{% if labels != None %}
+		    <table>
+		        <tr>
+			    <th> Label name </th>
+		   	    <th> Confidence </th>
+		        </tr>
+			{% for label in labels %}
+	   	        <tr>
+			    <td> {{ label["Name"] }} </td>
+		            <td> {{ label["Confidence"] }} </td>
+		    	</tr>
+			{% endfor %}
+    		    </table>
+		{% endif %}
 	    </div>
     </body>
 </html>
