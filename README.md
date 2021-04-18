@@ -21,3 +21,18 @@ Home page after login
 
 Accounts page
 ![accounts page](https://github.com/vedant-jad99/Cloud-Computing-Projects-and-Assignments-CS356/blob/main/Project%20Assignment-2/webapp%20pictures/Screenshot%20from%202021-04-16%2012-36-28.png)
+
+- - -
+
+### Project Assignment 3 - Application using AWS Rekognition
+
+On completion - 
+
+Image 1 (Room)
+![img1](https://github.com/vedant-jad99/Cloud-Computing-Projects-and-Assignments-CS356/blob/main/Project%20Assignment-3/output_images/op1.jpeg)
+
+Image 2 (Urban)
+![img2](https://github.com/vedant-jad99/Cloud-Computing-Projects-and-Assignments-CS356/blob/main/Project%20Assignment-3/output_images/op2.jpeg)
+
+Image 3 (Gohan)
+![img3](https://github.com/vedant-jad99/Cloud-Computing-Projects-and-Assignments-CS356/blob/main/Project%20Assignment-3/output_images/op3.jpeg)
